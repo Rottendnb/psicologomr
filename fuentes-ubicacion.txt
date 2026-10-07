@@ -1,0 +1,29 @@
+FUENTES — UBICACIÓN DE LA CONSULTA
+Fecha de consulta: 6 de octubre de 2026
+
+Dirección incorporada:
+Plaza Pintor Amalio García del Moral, 1, Local 2, 41005 Sevilla
+
+Fuentes contrastadas:
+- Enlace de Google y Google Maps aportado por Fernando durante el desarrollo.
+- Ficha pública de Psicólogo MR en Sevilla Local:
+  https://sevillalocal.es/salud/psicologos/psicologo-mr-miguel-angel-roldan-leon/
+- Otros directorios públicos consultados muestran la misma dirección y teléfono.
+- Información de transporte próximo:
+  https://moovitapp.com/index/es/transporte_p%C3%BAblico-Plaza_Pintor_Amalio_Garc%C3%ADa_del_Moral-Sevilla-site_42047098-3802
+  La parada Ramón y Cajal (San Francisco Javier) aparece aproximadamente a 2 minutos a pie. La estación de San Bernardo, con Metro L1 y Cercanías, aparece aproximadamente a 13–14 minutos a pie.
+- Información municipal sobre transporte público y estacionamiento regulado en San Francisco Javier:
+  https://www.sevilla.org/servicios/movilidad/transportes-publicos-de-sevilla
+  https://www.sevilla.org/actualidad/noticias/2022/el-ayuntamiento-modifica-la-ordenanza-fiscal-de-estacionamiento-regulado-para-reubicar-las-plazas-en-calles-del-entorno-de-san-francisco-javier-y-luis-de-morales-tras-la-peticion-vecinal-su-aprobacion-en-junta-del-distrito-nervion-y-en-el-pleno-municipal
+- Aparcamiento público de San Bernardo:
+  https://parkingsanbernardo.es/tarifas
+- La ficha pública de Psicólogo MR consultada indica acceso para silla de ruedas. Esta característica debe confirmarse directamente antes de publicar.
+
+Uso en la web:
+- Bloque de ubicación de index.html.
+- Mapa de Google Maps integrado.
+- Enlace para obtener indicaciones.
+- Datos estructurados PostalAddress para buscadores.
+
+PENDIENTE
+Aunque la dirección coincide en varias fuentes públicas, Miguel Ángel debe confirmar que desea mostrarla de esta forma en la publicación final. Las conexiones de transporte son orientativas y pueden cambiar. La accesibilidad del local debe confirmarse directamente.

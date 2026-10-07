@@ -1,0 +1,28 @@
+FUENTES PARA LOS BORRADORES LEGALES — PSICÓLOGO MR
+
+Textos actuales de Psicólogo MR consultados el 6 de octubre de 2026:
+- https://psicologomr.com/politica-de-privacidad/
+- https://psicologomr.com/politica-de-cookies/
+- https://psicologomr.com/aviso-legal/
+
+Fuentes normativas y guías oficiales consultadas:
+- Reglamento (UE) 2016/679, Reglamento General de Protección de Datos.
+- Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales.
+- Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico.
+- Ley 41/2002, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica.
+- Agencia Española de Protección de Datos, Guía sobre el uso de las cookies, mayo de 2024:
+  https://www.aepd.es/guias/guia-cookies.pdf
+- Agencia Española de Protección de Datos, Guía para profesionales del sector sanitario:
+  https://www.aepd.es/guias/guia-profesionales-sector-sanitario.pdf
+- Agencia Española de Protección de Datos, área de salud:
+  https://www.aepd.es/areas-de-actuacion/salud
+
+DATOS QUE NO DEBEN PUBLICARSE SIN CONFIRMACIÓN
+
+- NIF 30230843B.
+- Domicilio legal en C/ Espinosa y Cárcel, 24, local, 41005 Sevilla.
+- Vigencia y función del correo dpo@lcprivacidad.com.
+- Identidad del proveedor de alojamiento y mantenimiento.
+- Inventario exacto de cookies después de publicar en el dominio definitivo.
+
+Estos textos son borradores informativos. Conviene que Miguel Ángel o su asesor de protección de datos los valide antes de sustituir los textos legales actuales.

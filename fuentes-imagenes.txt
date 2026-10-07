@@ -1,0 +1,20 @@
+FUENTES DE LAS IMÁGENES DE LA CONSULTA — PSICÓLOGO MR
+
+Página oficial de origen:
+https://psicologomr.com/centro-psicologico-en-sevilla/
+
+Archivos incorporados al borrador:
+- img/consulta-1.jpg — IMG_20260313_171447-scaled.jpg
+- img/consulta-2.jpg — IMG_20260313_171420-scaled.jpg
+- img/consulta-3.jpg — IMG_20260313_171657-scaled.jpg
+- img/consulta-4.jpg — IMG_20260313_171609-scaled.jpg
+- img/miguel-angel-exterior.png — 4-retocada-800x820.png, aportada directamente para el borrador.
+
+Las fotografías se han descargado de la web oficial el 6 de octubre de 2026.
+
+Antes de publicar:
+- Confirmar con Miguel Ángel que las imágenes son propias y que autoriza su reutilización.
+- Mantener los textos alternativos descriptivos para accesibilidad.
+- No se ha incorporado el archivo identificado en la página original como
+  "Gemini_Generated_Image_e7dclee7dclee7dc" porque parece una imagen generada con IA.
+- La fotografía exterior de Miguel Ángel sí se utiliza en la página «Sobre mí».

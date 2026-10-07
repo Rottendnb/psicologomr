@@ -1,0 +1,78 @@
+PRESENTACIÓN RÁPIDA — NUEVA WEB PSICÓLOGO MR
+Duración recomendada: 5–7 minutos
+
+ANTES DE EMPEZAR
+
+1. Abre index.html con Live Server.
+2. Pon el navegador a pantalla completa.
+3. Comprueba que el zoom del navegador esté al 100 % y recarga con Ctrl + F5.
+4. Cierra pestañas que no pertenezcan al proyecto y silencia las notificaciones.
+5. Abre previamente Inicio, Cómo trabajo, Sobre mí y Terapia individual para que el recorrido sea fluido.
+6. Ten preparado el móvil o reduce la ventana al final para enseñar la adaptación responsive.
+7. Comprueba que hay conexión a internet para mostrar Google Maps y Calendly.
+8. La dirección se ha incorporado desde la información pública aportada; no presentes todavía precios, horarios ni otros datos marcados como provisionales como información definitiva.
+
+GUION PARA DECÍRSELO
+
+«He preparado un rediseño pensado para transmitir más confianza, explicar mejor tu forma de trabajar y facilitar que una persona pueda reservar sin perderse. No es solo un cambio de colores: he reorganizado toda la experiencia.»
+
+RECORRIDO DE LA DEMOSTRACIÓN
+
+1. PORTADA
+Enseña el mensaje principal, los botones de reserva y WhatsApp y la sensación general de marca.
+
+Frase sugerida:
+«Lo primero que ve el paciente explica quién eres, dónde trabajas y qué puede hacer a continuación.»
+
+2. CÓMO TRABAJO
+Abre la página desde el menú. Enseña los cuatro pasos, la primera sesión y el bloque de expectativas.
+
+Frase sugerida:
+«Esta página responde a una duda muy importante antes de reservar: cómo será realmente empezar terapia contigo.»
+
+3. MENÚ DE TERAPIAS
+Abre el desplegable y entra brevemente en terapia individual, pareja, familiar y preparación de entrevista de Policía.
+
+Frase sugerida:
+«Cada servicio tiene ahora su propia página y su propio mensaje, lo que ayuda tanto al paciente como al posicionamiento en Google.»
+
+4. SOBRE MÍ
+Enseña la trayectoria, la formación y el currículum visual.
+
+Frase sugerida:
+«La trayectoria ya no queda escondida en la web antigua; ahora funciona como una prueba clara de experiencia y especialización.»
+
+5. OPINIONES Y RESERVA
+Vuelve a la portada, muestra las opiniones de Google, WhatsApp y el calendario integrado en la página.
+
+Frase sugerida:
+«La web acompaña a la persona hasta una acción concreta: consultar una duda o reservar.»
+
+6. VERSIÓN MÓVIL
+Reduce la ventana y enseña el menú, los botones inferiores y cómo se adapta el contenido.
+
+Frase sugerida:
+«La mayor parte de las visitas llegará desde el móvil, así que esta versión se ha trabajado como parte principal del proyecto.»
+
+CONSEJO PARA LA DEMOSTRACIÓN
+
+No recorras todas las secciones ni leas los textos. Enseña la estructura, explica la intención de cada bloque y deja que Miguel Ángel marque dónde quiere detenerse. Las páginas legales son borradores técnicos: no hace falta abrirlas salvo que pregunte por ellas.
+
+PREGUNTAS QUE DEBEMOS HACERLE
+
+- ¿Te representa el tono de los textos?
+- ¿Qué servicios quieres destacar primero?
+- ¿Continúan vigentes las tarifas y duraciones indicadas?
+- ¿Confirmas que la dirección debe mostrarse como Plaza Pintor Amalio García del Moral, 1, Local 2, 41005 Sevilla?
+- ¿Cuál es el horario y la modalidad exacta de cada servicio?
+- ¿Podemos utilizar estas fotografías y reseñas en la publicación final?
+- ¿Es correcto el enlace actual de Calendly?
+- ¿Quieres mantener todos los servicios o retirar alguno?
+
+CIERRE SUGERIDO
+
+«Esto es una propuesta funcional muy avanzada. Con tus confirmaciones sustituimos los datos provisionales, preparamos los textos legales y la dejamos lista para publicar.»
+
+IMPORTANTE
+
+La web es un borrador de presentación. Los datos pendientes están recogidos en datos-por-confirmar.txt. No subir la versión definitiva al dominio hasta revisar información profesional, autorizaciones, privacidad, cookies y aviso legal.

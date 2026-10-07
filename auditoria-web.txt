@@ -1,0 +1,98 @@
+AUDITORÍA DEL BORRADOR — PSICÓLOGO MR
+Fecha: 6 de octubre de 2026
+
+ACTUALIZACIÓN DEL PROYECTO
+
+- El proyecto cuenta ahora con una portada principal, páginas independientes para «Cómo trabajo», «Sobre mí», «Terapia individual», «Terapia de pareja», «Terapia familiar» y «Preparación de entrevista de Policía», además de Privacidad, Cookies y Aviso legal.
+- El menú comienza por «Cómo trabajo» y reúne los cuatro servicios en un desplegable accesible en ordenador y móvil.
+- La página «Cómo trabajo» explica principios, etapas, primera sesión, expectativas y encaje terapéutico.
+- La página «Sobre mí» incorpora currículum visual, formación, experiencia, colegiación, áreas de trabajo y llamada a reserva.
+- La página «Terapia individual» explica motivos de consulta, proceso, primera sesión, modalidades, duración, tarifa y reserva.
+- La página «Terapia de pareja» explica conflictos habituales, enfoque sin culpables, proceso compartido, objetivos, primera sesión y reserva.
+- La página «Terapia familiar» presenta el enfoque sistémico, participación flexible, proceso, primera sesión, tarifa y bono publicados.
+- La página «Preparación de entrevista de Policía» presenta un programa en tres fases, simulaciones grabadas, principios éticos, modalidades y tarifas publicadas.
+- La portada incorpora una galería con cuatro fotografías reales del despacho, la zona de espera y el aseo adaptado, procedentes de la web oficial actual. «Sobre mí» utiliza además una nueva fotografía exterior de Miguel Ángel aportada para el borrador.
+- sitemap.xml incluye las diez páginas públicas del proyecto.
+
+RESULTADO GENERAL
+
+El borrador tiene una base sólida para presentarlo al cliente. La estructura, la experiencia móvil, la accesibilidad básica, el SEO técnico inicial y las vías de contacto están correctamente planteadas.
+
+
+SEO Y ESTRUCTURA — CORRECTO
+
+- Título de página descriptivo y centrado en «Psicólogo en Sevilla».
+- Meta descripción específica y orientada a pacientes.
+- Una única etiqueta H1 y jerarquía de encabezados comprensible.
+- URL canonical configurada.
+- Idioma español de España declarado.
+- robots.txt y sitemap.xml presentes.
+- Datos estructurados para organización, profesional, sitio web y página principal.
+- Enlaces a Instagram, LinkedIn y perfil público de Google.
+- Contenido suficiente para comprender servicios, proceso y forma de contacto.
+
+
+RENDIMIENTO — CORRECTO PARA EL BORRADOR
+
+- Fotografía principal precargada y marcada como prioritaria.
+- Imágenes secundarias con carga diferida.
+- Anchura y altura declaradas para evitar saltos de diseño.
+- Calendly y Google Maps se muestran directamente para ofrecer una experiencia más visual; esta carga automática deberá contemplarse en privacidad y consentimiento antes de publicar.
+- CSS y JavaScript separados y organizados.
+- Peso aproximado de la fotografía principal: 204 KB.
+- Las cuatro fotografías de la consulta pesan entre 180 y 266 KB y utilizan carga diferida.
+- Peso aproximado de cada imagen de Instagram: 14–15 KB.
+
+
+ACCESIBILIDAD — CORRECTO
+
+- Enlace para saltar directamente al contenido.
+- Navegación mediante teclado y foco visible.
+- Menú móvil con estado abierto o cerrado comunicado correctamente.
+- Menú con indicación automática de la sección visible.
+- Textos alternativos en las imágenes informativas.
+- Controles de formulario identificados.
+- Preferencia de reducción de movimiento respetada.
+- Aviso de ayuda urgente diferenciado de la reserva ordinaria.
+
+
+CONVERSIÓN — CORRECTO
+
+- Reserva visible desde la cabecera, portada y varias secciones.
+- WhatsApp disponible sin ocultar Calendly.
+- Botones fijos de contacto en móvil.
+- Prueba social de Google visible cerca de la portada.
+- Orientador de terapia sin almacenamiento de datos personales.
+- Tarifas, ubicación, preguntas y proceso explicados antes de reservar.
+
+
+MEJORAS APLICADAS EN ESTA AUDITORÍA
+
+- Estado activo en el menú para indicar la sección que se está visitando.
+- Estado accesible aria-current en la navegación.
+- Fecha de modificación del sitemap actualizada.
+- Revisión de rutas, imágenes, enlaces internos y archivos principales.
+
+
+PENDIENTE ANTES DE PUBLICAR
+
+1. Sustituir todas las tarifas y horarios provisionales.
+2. Confirmar con Miguel Ángel la dirección, las indicaciones de llegada y las condiciones concretas de accesibilidad ya incorporadas.
+3. Confirmar que las fotografías procedentes de la web actual son propias y que autoriza reutilizarlas en la nueva web.
+4. Confirmar que el número de colegiado AN07899 continúa siendo correcto.
+5. Confirmar titulaciones, acreditaciones y enfoque terapéutico.
+6. Confirmar teléfono, correo, Calendly y perfiles sociales.
+7. Obtener autorización para las reseñas mostradas.
+8. Confirmar política de cambios, cancelaciones, pagos y facturación.
+9. Revisar los textos legales y la política real de cookies.
+10. Revisar con Miguel Ángel los datos estructurados de dirección local ya incorporados.
+11. Revisar con Miguel Ángel el contenido definitivo de todas las páginas independientes y decidir si falta algún servicio prioritario.
+12. Preparar una imagen social solo si Miguel Ángel desea una vista personalizada al compartir la web.
+13. Conectar analítica únicamente después de definir el consentimiento de cookies.
+14. Validar los borradores de Privacidad, Cookies y Aviso legal con Miguel Ángel o su asesor, confirmar domicilio legal, NIF, canal de protección de datos y proveedor de alojamiento.
+15. Implementar el panel de consentimiento y bloquear Google Maps y Calendly hasta que la persona usuaria acepte los servicios externos.
+
+
+RECOMENDACIÓN
+
+La portada ya tiene contenido suficiente para la presentación. El siguiente trabajo debe centrarse en sustituir datos provisionales, ajustar los textos a la forma real de trabajar de Miguel Ángel y revisar las páginas de servicio ya creadas.

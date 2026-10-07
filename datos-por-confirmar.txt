@@ -1,0 +1,32 @@
+DATOS PROVISIONALES DEL BORRADOR — PSICÓLOGO MR
+
+Estos datos se han creado únicamente para que la propuesta visual se vea completa.
+No deben publicarse como información definitiva sin confirmación de Miguel Ángel.
+
+CONFIRMAR ANTES DE PUBLICAR
+
+1. Tarifa de terapia individual: la página profesional vigente muestra 60 €, pero debe confirmarse con Miguel Ángel antes de publicar.
+2. Tarifa de terapia de pareja: propuesta provisional de 75 €.
+3. Tarifa de terapia familiar: la página profesional anterior muestra 60 € por sesión y un bono de cuatro sesiones por 220 €, pero ambos importes deben confirmarse con Miguel Ángel.
+4. Duración de terapia individual: la página profesional vigente indica 60 minutos. Confirmar también la duración exacta de pareja y familia.
+5. Dirección incorporada y contrastada públicamente: Plaza Pintor Amalio García del Moral, 1, Local 2, 41005 Sevilla. Confirmar con Miguel Ángel que debe mostrarse exactamente así.
+6. La consulta se presenta en la zona de Nervión, de acuerdo con la dirección aportada.
+7. Número de colegiado: el borrador muestra AN07899, localizado en las fuentes profesionales públicas. Confirmarlo directamente con Miguel Ángel antes de publicar.
+8. Confirmar los datos incorporados en «Conocer mi trayectoria»: licenciatura en Psicología (2009), Máster en Psicología de la Salud (2013), formación en terapia familiar y de pareja, consulta propia desde 2014, Máster en Psicología General Sanitaria (2018) y número de colegiado AN07899.
+9. Horario: propuesta provisional de lunes a jueves de 09:00 a 21:00 y viernes de 09:00 a 15:00.
+10. Modalidades disponibles para cada terapia: presencial, online o ambas.
+11. Política para cambiar o cancelar citas.
+12. Forma de pago y si se entrega factura.
+13. Motivos de consulta y especialidades que desea mostrar: ansiedad, estrés, autoestima, relaciones, duelo y conflictos familiares aparecen como propuesta provisional.
+14. Indicaciones para llegar: se han incorporado las conexiones de Ramón y Cajal, San Francisco Javier y San Bernardo, además de opciones generales de aparcamiento. Confirmar directamente la accesibilidad del local y cualquier indicación más precisa.
+15. Texto definitivo sobre confidencialidad, protección de datos y límites profesionales que Miguel Ángel desea comunicar.
+16. Confirmar en el perfil oficial de Google la valoración y el número total de opiniones el día de publicación. Los fragmentos mostrados ya proceden de reseñas públicas y sus fuentes están documentadas en fuentes-resenas.txt.
+17. Preparación de entrevista de Policía: confirmar que continúan vigentes el taller individual de cuatro sesiones de 60 minutos por 220 € y la sesión individual de simulación de 60 minutos por 60 €.
+18. Google Maps y Calendly se cargan automáticamente en este borrador. Antes de publicar hay que reflejar estas conexiones en la política de privacidad y configurar correctamente el consentimiento de cookies si resulta necesario.
+19. Las cuatro fotografías de la consulta proceden de la página oficial actual de Psicólogo MR. Confirmar con Miguel Ángel que son propias y que autoriza reutilizarlas en la nueva web. No se ha utilizado la imagen cuyo archivo aparece identificado como generado con Gemini.
+20. La fotografía exterior de Miguel Ángel incorporada en «Sobre mí» fue aportada directamente para este borrador. La imagen de la fachada identificada como generada con Gemini se mantiene fuera del proyecto.
+21. Aviso legal y privacidad: confirmar el NIF 30230843B y si el domicilio legal continúa siendo C/ Espinosa y Cárcel, 24, local, 41005 Sevilla. No confundir el domicilio legal con la dirección actual de la consulta.
+22. Confirmar si sigue vigente el correo dpo@lcprivacidad.com que figura en la política actual y quién presta el servicio de alojamiento/mantenimiento web.
+23. Antes de publicar, realizar una auditoría de cookies sobre el dominio definitivo e implementar un panel que bloquee Google Maps y Calendly hasta obtener consentimiento. La política ya deja documentada esta necesidad.
+
+Cuando Miguel Ángel confirme estos datos, deben sustituirse en index.html antes de publicar la web.

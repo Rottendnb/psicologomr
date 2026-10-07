@@ -1,0 +1,136 @@
+GUION PARA PRESENTAR EL BORRADOR — PSICÓLOGO MR
+
+OBJETIVO DE LA REUNIÓN
+
+Enseñar la propuesta visual, comprobar que transmite la personalidad profesional de Miguel Ángel y recoger los datos reales necesarios para terminar la web.
+
+IMPORTANTE
+
+Este es un borrador funcional. La dirección se ha incorporado desde información pública, pero las tarifas, el horario y algunos textos siguen siendo provisionales. Debes explicarlo al principio para que Miguel Ángel valore el diseño y el funcionamiento sin confundir los ejemplos con información definitiva.
+
+
+1. CÓMO EMPEZAR LA PRESENTACIÓN
+
+Puedes decir:
+
+«He preparado una propuesta completa para que puedas ver cómo podría sentirse la nueva web. Mi objetivo ha sido transmitir cercanía, profesionalidad y confianza, y facilitar que una persona entienda cómo puedes ayudarla y pueda reservar sin complicaciones. Algunos datos aparecen solo como ejemplo y hoy me gustaría confirmar contigo cuáles son los correctos.»
+
+
+2. ORDEN RECOMENDADO PARA ENSEÑAR LA WEB
+
+1. Portada
+   Explica que el mensaje principal busca transmitir calma, cercanía y una dirección clara.
+
+2. Motivos de consulta
+   Enseña cómo una persona puede reconocerse en situaciones concretas sin encontrarse con lenguaje demasiado técnico.
+
+3. Orientador de terapia
+   Haz una prueba y demuestra que recomienda terapia individual, de pareja o familiar sin recoger datos personales.
+
+4. Por qué trabajar conmigo
+   Señala que esta sección responde a la pregunta más importante del paciente: «¿Por qué elegir a este psicólogo?».
+
+5. Terapias
+   Comprueba con Miguel Ángel qué servicios quiere mantener, eliminar o destacar.
+
+6. Tarifas y modalidades
+   Recuerda que todos los precios y duraciones son provisionales.
+
+7. La consulta y ubicación
+   Enseña la nueva galería con fotografías reales del centro y confirma que autoriza reutilizarlas. Después muestra el mapa cargado directamente y revisa con Miguel Ángel la dirección, el transporte, el aparcamiento y las condiciones concretas de accesibilidad.
+
+8. Opiniones de Google
+   Explica que las reseñas aportan confianza y enlazan con el perfil público de Google.
+
+9. Reserva con Calendly
+   Muestra cómo la agenda aparece cargada directamente y permite reservar dentro de la propia web.
+
+10. Versión móvil
+    Enséñale los botones fijos para llamar, escribir por WhatsApp y reservar.
+
+
+3. PREGUNTAS QUE DEBES HACERLE
+
+IDENTIDAD Y PRESENTACIÓN
+
+- ¿Te representa el tono de los textos?
+- ¿Prefieres que la web hable de tú o de usted?
+- ¿Qué enfoque terapéutico utilizas y cómo te gustaría explicarlo?
+- ¿Qué titulaciones, másteres o acreditaciones quieres mostrar?
+- ¿Cuál es tu número de colegiado correcto?
+- ¿Quieres utilizar estas fotografías o preparar otras nuevas?
+
+SERVICIOS
+
+- ¿Ofreces terapia individual, de pareja y familiar actualmente?
+- ¿Quieres mantener la preparación de entrevista para Policía?
+- ¿Qué problemas o especialidades quieres destacar?
+- ¿Atiendes únicamente a adultos o también a adolescentes?
+- ¿Hay algún servicio que no quieras mostrar en la portada?
+
+TARIFAS Y SESIONES
+
+- ¿Cuál es el precio real de cada modalidad?
+- ¿Cuánto dura cada tipo de sesión?
+- ¿Cuál suele ser la frecuencia de las sesiones?
+- ¿Qué formas de pago aceptas?
+- ¿Entregas factura?
+- ¿Cuál es la política para cambios y cancelaciones?
+
+CONSULTA Y HORARIOS
+
+- ¿Confirmas la dirección Plaza Pintor Amalio García del Moral, 1, Local 2, 41005 Sevilla?
+- ¿Quieres mantener esta dirección visible públicamente o mostrarla solo después de reservar?
+- ¿Qué transporte público y aparcamientos hay cerca?
+- ¿La consulta tiene acceso adaptado?
+- ¿Cuál es el horario real de atención?
+- ¿Qué servicios pueden realizarse online?
+
+CONTACTO Y RESERVAS
+
+- ¿El teléfono 622 033 566 es el correcto?
+- ¿El correo info@psicologomr.com es el correcto?
+- ¿La dirección de Calendly actual es la definitiva?
+- ¿Quieres recibir primero una consulta por WhatsApp o permitir la reserva directa?
+- ¿Qué mensaje automático quieres que aparezca en WhatsApp?
+
+RESEÑAS Y REDES
+
+- ¿Podemos mostrar estas reseñas literalmente?
+- ¿Quieres seleccionar otras opiniones concretas?
+- ¿El perfil de Google enlazado es el correcto?
+- ¿Quieres mantener Instagram y LinkedIn?
+- ¿Qué publicaciones de Instagram quieres destacar?
+
+LEGALIDAD Y PRIVACIDAD
+
+- ¿Dispones de textos actualizados de privacidad, cookies y aviso legal?
+- ¿Qué información sobre confidencialidad quieres comunicar?
+- ¿Utilizas alguna herramienta adicional que requiera consentimiento de cookies?
+
+
+4. DECISIONES QUE DEBES CONSEGUIR EN LA REUNIÓN
+
+- Aprobación general del diseño y los colores.
+- Secciones que quiere conservar o eliminar.
+- Servicios definitivos.
+- Tarifas y duración de las sesiones.
+- Dirección, horarios y modalidades.
+- Datos profesionales y número de colegiado.
+- Calendly, WhatsApp, teléfono, correo y redes correctos.
+- Fotografías y reseñas autorizadas.
+- Correcciones de textos y tono.
+
+
+5. CÓMO CERRAR LA REUNIÓN
+
+Puedes decir:
+
+«Con los datos que hemos confirmado prepararé la siguiente versión sustituyendo toda la información provisional. Después haremos una última revisión en móvil y ordenador antes de decidir cómo publicar la web.»
+
+
+6. CONSEJO PARA LA PRESENTACIÓN
+
+No empieces hablando de HTML, CSS o JavaScript. Empieza hablando de lo que conseguirá la web: transmitir confianza, explicar bien sus servicios y facilitar que una persona reserve una cita. La tecnología es el medio, no lo que el cliente está comprando.
+
+Duración recomendada de la presentación: entre 15 y 25 minutos.
