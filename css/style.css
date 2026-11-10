@@ -9478,3 +9478,210 @@ body {
   }
 }
 
+/* Terapias y entrevista Policía · paleta luminosa de Opiniones */
+
+:is(.therapy-page,.couple-page,.family-page,.police-page.police-summary) {
+  background: #fff;
+}
+
+:is(.therapy-page .therapy-hero,
+    .couple-page .couple-hero,
+    .family-page .family-hero,
+    .police-page.police-summary .police-hero) {
+  color: var(--brand-contrast) !important;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.2),transparent 30%),
+    #fafcfb !important;
+}
+
+:is(.therapy-page .therapy-hero,
+    .couple-page .couple-hero,
+    .family-page .family-hero,
+    .police-page.police-summary .police-hero)
+  :is(h1,h2,h3,p,a,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+:is(.therapy-page .therapy-lead,
+    .couple-page .couple-lead,
+    .family-page .family-lead,
+    .police-page.police-summary .police-lead,
+    .police-page.police-summary .police-hero-note,
+    .police-page.police-summary .police-breadcrumb,
+    .police-page.police-summary .police-breadcrumb a) {
+  color: rgba(23,61,38,.72) !important;
+}
+
+:is(.therapy-page .therapy-hero-copy h1 em,
+    .couple-page .couple-hero-copy h1 em,
+    .family-page .family-hero-copy h1 em,
+    .police-page.police-summary .police-hero-copy h1 em) {
+  color: var(--green-text) !important;
+}
+
+.therapy-page .therapy-start-card,
+.couple-page .couple-dialogue-card,
+.family-page .family-system-card,
+.police-page.police-summary .police-plan-card {
+  color: var(--brand-contrast) !important;
+  border: 1px solid rgba(23,61,38,.15);
+  background: #fff !important;
+  box-shadow: 0 22px 50px rgba(23,61,38,.1);
+}
+
+.therapy-page .therapy-start-card :is(h2,li,a),
+.police-page.police-summary .police-plan-card :is(span,strong,small,p) {
+  color: var(--brand-contrast) !important;
+}
+
+.therapy-page .therapy-start-label,
+.police-page.police-summary .police-plan-top strong {
+  color: var(--green-text) !important;
+}
+
+.therapy-page .therapy-start-card li,
+.police-page.police-summary .police-plan-top {
+  border-color: rgba(23,61,38,.12);
+}
+
+.therapy-page .therapy-start-card li::before {
+  background: var(--brand-logo);
+}
+
+.couple-page .couple-dialogue-top {
+  color: var(--brand-contrast);
+  background: #f7faf8;
+}
+
+.couple-page .couple-dialogue-top small {
+  color: var(--brand-contrast);
+}
+
+.couple-page .couple-voices blockquote:nth-child(2) {
+  background: #f7faf8;
+}
+
+.police-page.police-summary .police-plan-card li > span {
+  border-color: rgba(23,61,38,.18);
+  background: #f7faf8;
+}
+
+.police-page.police-summary .police-plan-card li:not(:last-child)::after {
+  background: rgba(23,61,38,.14);
+}
+
+.police-page.police-summary .police-plan-card li i {
+  background: rgba(23,61,38,.13);
+}
+
+.police-page.police-summary .police-plan-status {
+  color: var(--brand-contrast);
+  border: 1px solid rgba(23,61,38,.12);
+  background: #f7faf8;
+}
+
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-info,
+.police-page.police-summary .police-phases {
+  color: var(--brand-contrast) !important;
+  background: #fff !important;
+}
+
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-card,
+.police-page.police-summary .police-phase-list > li {
+  background: #fff !important;
+}
+
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-card-soft,
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-first,
+.police-page.police-summary .police-phase-list > li:nth-child(even) {
+  background: #f7faf8 !important;
+}
+
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-pricing,
+.police-page.police-summary .police-pricing {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  background:
+    radial-gradient(circle at 86% 16%,rgba(160,225,168,.14),transparent 28%),
+    #f8fbf8 !important;
+}
+
+.police-page.police-summary .police-pricing
+  :is(h2,h3,p,li,.eyebrow,.eyebrow span,.police-price-note) {
+  color: var(--brand-contrast) !important;
+}
+
+:is(.therapy-page,.couple-page,.family-page) .therapy-summary-price-card,
+.police-page.police-summary .police-price-card,
+.police-page.police-summary .police-pricing .police-price-card.featured {
+  color: var(--brand-contrast) !important;
+  border: 1px solid rgba(23,61,38,.16);
+  background: #fff !important;
+  box-shadow: 0 22px 50px rgba(23,61,38,.1);
+}
+
+.police-page.police-summary .police-pricing .police-price-card.featured {
+  border-left: 5px solid var(--brand-logo);
+}
+
+.police-page.police-summary .police-price-card .button,
+.police-page.police-summary .police-price-card .button-ghost,
+.police-page.police-summary .police-hero :is(.button-light,.button-outline-light) {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.police-page.police-summary .police-price-card .button:hover,
+.police-page.police-summary .police-price-card .button:focus-visible,
+.police-page.police-summary .police-price-card .button-ghost:hover,
+.police-page.police-summary .police-price-card .button-ghost:focus-visible,
+.police-page.police-summary .police-hero :is(.button-light,.button-outline-light):hover,
+.police-page.police-summary .police-hero :is(.button-light,.button-outline-light):focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.police-page.police-summary .police-price-card:not(.featured) .police-price-tag,
+.police-page.police-summary .police-price-card.featured .police-price-tag {
+  color: var(--brand-contrast) !important;
+  background: var(--brand-logo) !important;
+}
+
+:is(.therapy-page .therapy-hero,
+    .couple-page .couple-hero,
+    .family-page .family-hero) .hero-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+:is(.therapy-page .therapy-hero,
+    .couple-page .couple-hero,
+    .family-page .family-hero) .hero-actions .button:hover,
+:is(.therapy-page .therapy-hero,
+    .couple-page .couple-hero,
+    .family-page .family-hero) .hero-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+body:is(.therapy-page,.couple-page,.family-page)
+  :is(.therapy-hero,.couple-hero,.family-hero) .hero-actions a.button,
+body.police-page.police-summary .police-hero .hero-actions a.button {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff;
+}
+
+body:is(.therapy-page,.couple-page,.family-page)
+  :is(.therapy-hero,.couple-hero,.family-hero) .hero-actions a.button:hover,
+body:is(.therapy-page,.couple-page,.family-page)
+  :is(.therapy-hero,.couple-hero,.family-hero) .hero-actions a.button:focus-visible,
+body.police-page.police-summary .police-hero .hero-actions a.button:hover,
+body.police-page.police-summary .police-hero .hero-actions a.button:focus-visible {
+  color: var(--brand-contrast) !important;
+  -webkit-text-fill-color: var(--brand-contrast);
+}
+
