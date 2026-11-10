@@ -3,8 +3,16 @@ const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 const pageProgress = document.querySelector('[data-page-progress]');
 const backToTop = document.querySelector('[data-back-to-top]');
-const navDropdown = document.querySelector('.nav-dropdown');
-const navDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+const navDropdowns = Array.from(document.querySelectorAll('.nav-dropdown'));
+
+const closeNavDropdowns = (except = null) => {
+  navDropdowns.forEach(dropdown => {
+    if (dropdown === except) return;
+
+    dropdown.classList.remove('is-open');
+    dropdown.querySelector('.nav-dropdown-toggle')?.setAttribute('aria-expanded', 'false');
+  });
+};
 
 // Si la fotografía exterior aún no se ha subido al servidor, evitamos
 // mostrar el icono de imagen rota y usamos el retrato principal como respaldo.
@@ -64,10 +72,7 @@ if (toggle && nav) {
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Abrir menú');
 
-    if (navDropdown && navDropdownToggle) {
-      navDropdown.classList.remove('is-open');
-      navDropdownToggle.setAttribute('aria-expanded', 'false');
-    }
+    closeNavDropdowns();
 
     if (returnFocus) {
       toggle.focus();
@@ -104,27 +109,38 @@ if (toggle && nav) {
   }, { passive: true });
 }
 
-if (navDropdown && navDropdownToggle) {
-  navDropdownToggle.addEventListener('click', () => {
-    const open = navDropdown.classList.toggle('is-open');
-    navDropdownToggle.setAttribute('aria-expanded', String(open));
-  });
+navDropdowns.forEach(dropdown => {
+  const dropdownToggle = dropdown.querySelector('.nav-dropdown-toggle');
 
-  document.addEventListener('click', event => {
-    if (!navDropdown.contains(event.target)) {
-      navDropdown.classList.remove('is-open');
-      navDropdownToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
+  if (!dropdownToggle) return;
 
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && navDropdown.classList.contains('is-open')) {
-      navDropdown.classList.remove('is-open');
-      navDropdownToggle.setAttribute('aria-expanded', 'false');
-      navDropdownToggle.focus();
-    }
+  dropdownToggle.addEventListener('click', event => {
+    event.stopPropagation();
+    const willOpen = !dropdown.classList.contains('is-open');
+
+    closeNavDropdowns(dropdown);
+    dropdown.classList.toggle('is-open', willOpen);
+    dropdownToggle.setAttribute('aria-expanded', String(willOpen));
   });
-}
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('.nav-dropdown')) {
+    closeNavDropdowns();
+  }
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+
+  const openDropdown = document.querySelector('.nav-dropdown.is-open');
+  const openToggle = openDropdown?.querySelector('.nav-dropdown-toggle');
+
+  if (openDropdown && openToggle) {
+    closeNavDropdowns();
+    openToggle.focus();
+  }
+});
 
 const sectionLinks = Array.from(document.querySelectorAll('.main-nav a[href^="#"]'));
 const observedSections = sectionLinks
@@ -331,4 +347,45 @@ document.querySelectorAll('.accordion details').forEach(currentDetail => {
     });
   });
 });
+
+const contactForm = document.querySelector('[data-contact-form]');
+const contactStatus = document.querySelector('[data-contact-status]');
+const contactMessage = document.querySelector('#mensaje');
+const contactMessageCount = document.querySelector('[data-message-count]');
+
+if (contactMessage && contactMessageCount) {
+  const updateMessageCount = () => {
+    contactMessageCount.textContent = `${contactMessage.value.length} / ${contactMessage.maxLength}`;
+  };
+
+  contactMessage.addEventListener('input', updateMessageCount);
+  updateMessageCount();
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) return;
+
+    const data = new FormData(contactForm);
+    const reason = data.get('motivo') || 'Consulta general';
+    const subject = `Consulta web: ${reason}`;
+    const body = [
+      `Nombre: ${data.get('nombre') || ''}`,
+      `Email: ${data.get('email') || ''}`,
+      `Teléfono: ${data.get('telefono') || 'No indicado'}`,
+      `Motivo: ${reason}`,
+      '',
+      'Mensaje:',
+      data.get('mensaje') || ''
+    ].join('\n');
+
+    if (contactStatus) {
+      contactStatus.textContent = 'Se abrirá tu aplicación de correo con el mensaje preparado. Revísalo y pulsa Enviar.';
+    }
+
+    window.location.href = `mailto:info@psicologomr.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}
 

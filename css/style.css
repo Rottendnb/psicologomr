@@ -3069,6 +3069,10 @@ h3 {
   background: rgba(160,225,168,.35);
 }
 
+.couple-needs-grid {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
 .couple-no-blame {
   padding: 94px 0;
   color: #fff;
@@ -4274,6 +4278,154 @@ h3 {
 
 .review-source-note a:hover {
   color: var(--mint);
+}
+
+/* Página independiente de opiniones */
+.reviews-page-hero {
+  padding: clamp(70px,9vw,128px) 0;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(160,225,168,.58), transparent 30%),
+    var(--cream);
+}
+
+.reviews-page-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.25fr) minmax(280px,.75fr);
+  gap: clamp(48px,8vw,110px);
+  align-items: center;
+}
+
+.reviews-page-intro h1 {
+  max-width: 850px;
+  margin: 20px 0 24px;
+  font: 500 clamp(3rem,6.4vw,6.3rem)/.98 var(--serif);
+  letter-spacing: -.055em;
+}
+
+.reviews-page-intro > p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.reviews-score-card {
+  display: flex;
+  min-height: 360px;
+  padding: clamp(30px,5vw,52px);
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(23,61,38,.16);
+  border-radius: 34px;
+  background: rgba(255,255,255,.9);
+  box-shadow: var(--shadow);
+}
+
+.reviews-score-card .google-name {
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+.reviews-score-card > strong {
+  margin: 18px 0 2px;
+  font: 500 clamp(5rem,9vw,8rem)/.9 var(--serif);
+  letter-spacing: -.06em;
+}
+
+.reviews-score-card .google-stars {
+  margin: 14px 0 20px;
+  font-size: 1.25rem;
+}
+
+.reviews-score-card p {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.reviews-score-card small {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.reviews-page-list {
+  background: #fff;
+}
+
+.reviews-page-grid .review-card {
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 45px rgba(23,61,38,.08);
+}
+
+.reviews-verification-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 34px;
+  padding: 26px 30px;
+  border: 1px solid rgba(23,61,38,.14);
+  border-radius: 22px;
+  background: var(--cream);
+}
+
+.reviews-verification-note p {
+  max-width: 780px;
+  margin: 5px 0 0;
+  color: var(--muted);
+}
+
+.reviews-verification-note .text-link {
+  flex: 0 0 auto;
+}
+
+.reviews-page-values {
+  padding: clamp(74px,10vw,130px) 0;
+  background: var(--green);
+}
+
+.reviews-page-values-grid {
+  display: grid;
+  grid-template-columns: minmax(0,.82fr) minmax(0,1.18fr);
+  gap: clamp(48px,8vw,110px);
+  align-items: start;
+}
+
+.reviews-page-values h2 {
+  margin-top: 18px;
+  font: 500 clamp(2.6rem,5vw,4.8rem)/1 var(--serif);
+  letter-spacing: -.045em;
+}
+
+.reviews-page-values ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews-page-values li {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 5px 18px;
+  padding: 24px;
+  border: 1px solid rgba(23,61,38,.18);
+  border-radius: 20px;
+  background: rgba(255,255,255,.38);
+}
+
+.reviews-page-values li > span {
+  grid-row: 1 / 3;
+  color: var(--green-text);
+  font: 500 1.1rem/1 var(--serif);
+}
+
+.reviews-page-values li strong {
+  font-size: 1.05rem;
+}
+
+.reviews-page-values li p {
+  margin: 0;
+  color: var(--green-ink);
 }
 
 /* ==========================================================
@@ -6278,6 +6430,40 @@ h3 {
   }
 }
 
+/* Página Cómo trabajo resumida */
+
+.method-summary .method-process-list {
+  grid-template-columns: repeat(3,1fr);
+}
+
+.method-summary .method-process-list li {
+  min-height: 330px;
+}
+
+.method-summary .method-first {
+  padding-block: 96px;
+}
+
+@media (max-width: 1050px) {
+  .method-summary .method-process-list {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 780px) {
+  .method-summary .method-process-list {
+    grid-template-columns: 1fr;
+  }
+
+  .method-summary .method-process-list li {
+    min-height: 0;
+  }
+
+  .method-summary .method-first {
+    padding-block: 72px;
+  }
+}
+
 /* Móviles pequeños */
 @media (max-width: 480px) {
   .hero-photo-wrap {
@@ -6886,5 +7072,2409 @@ h3 {
 .footer-bottom {
   color: var(--muted) !important;
   border-top-color: var(--line);
+}
+
+/* ==========================================================
+   22. MENÚ REORGANIZADO Y PÁGINA DE CONTACTO
+   ========================================================== */
+
+.main-nav {
+  gap: 20px;
+}
+
+.main-nav > a,
+.nav-dropdown-toggle {
+  white-space: nowrap;
+}
+
+.contact-hero {
+  padding: 86px 0 72px;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(160,225,168,.42), transparent 28%),
+    var(--cream);
+}
+
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.15fr) minmax(300px,.65fr);
+  align-items: end;
+  gap: 72px;
+}
+
+.contact-hero h1 {
+  max-width: 760px;
+  margin: 18px 0 22px;
+  font: 500 clamp(3.2rem,6vw,6.4rem)/.96 var(--serif);
+  letter-spacing: -.05em;
+}
+
+.contact-hero h1 em {
+  color: var(--green-text);
+  font-weight: inherit;
+}
+
+.contact-hero-copy > p:last-child {
+  max-width: 670px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.contact-hero-note {
+  padding: 28px;
+  border: 1px solid rgba(23,61,38,.16);
+  border-radius: 24px;
+  background: rgba(255,255,255,.74);
+  box-shadow: 0 18px 48px rgba(23,61,38,.08);
+}
+
+.contact-hero-note strong,
+.contact-hero-note span {
+  display: block;
+}
+
+.contact-hero-note strong {
+  margin-bottom: 8px;
+  color: var(--green-ink);
+  font-size: 1.02rem;
+}
+
+.contact-hero-note span {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(280px,.72fr) minmax(0,1.28fr);
+  gap: 58px;
+  align-items: start;
+}
+
+.contact-direct h2,
+.contact-form-card h2 {
+  margin: 14px 0 18px;
+  font: 500 clamp(2.3rem,4vw,4rem)/1.03 var(--serif);
+  letter-spacing: -.04em;
+}
+
+.contact-direct > p {
+  color: var(--muted);
+}
+
+.contact-options {
+  display: grid;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.contact-option {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color .2s,transform .2s,box-shadow .2s;
+}
+
+.contact-option:hover {
+  border-color: var(--green-text);
+  box-shadow: 0 12px 30px rgba(23,61,38,.08);
+  transform: translateY(-2px);
+}
+
+.contact-option-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 15px;
+  color: var(--green-ink);
+  background: var(--green);
+  font-weight: 700;
+}
+
+.contact-option strong,
+.contact-option > span:not(.contact-option-icon) {
+  display: block;
+}
+
+.contact-option > span:not(.contact-option-icon) > span {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.contact-confidentiality {
+  padding: 20px;
+  border-left: 3px solid var(--green-text);
+  border-radius: 0 16px 16px 0;
+  background: var(--cream);
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.contact-form-card {
+  padding: clamp(26px,5vw,52px);
+  border: 1px solid rgba(23,61,38,.14);
+  border-radius: 30px;
+  background: var(--cream);
+  box-shadow: var(--shadow);
+}
+
+.contact-form-card > p {
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+}
+
+.contact-field {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-field label {
+  color: var(--green-ink);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid rgba(31,46,43,.2);
+  border-radius: 14px;
+  outline: 0;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  transition: border-color .2s,box-shadow .2s;
+}
+
+.contact-field input,
+.contact-field select {
+  min-height: 54px;
+  padding: 0 15px;
+}
+
+.contact-field textarea {
+  min-height: 160px;
+  padding: 14px 15px;
+  resize: vertical;
+}
+
+.contact-field :is(input,select,textarea):focus {
+  border-color: var(--green-text);
+  box-shadow: 0 0 0 4px rgba(160,225,168,.34);
+}
+
+.contact-consent {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 11px;
+  align-items: start;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.contact-consent input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: var(--green-text);
+}
+
+.contact-consent a {
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+.contact-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-form-actions .button {
+  border: 0;
+  color: var(--green-ink);
+  font: 700 .95rem/1 var(--sans);
+  cursor: pointer;
+}
+
+.contact-form-hint,
+.contact-form-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: .84rem;
+}
+
+.contact-form-status {
+  min-height: 1.5em;
+  color: var(--green-text);
+  font-weight: 600;
+}
+
+@media (max-width: 1180px) and (min-width: 1051px) {
+  .header-inner {
+    gap: 16px;
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+
+  .main-nav a,
+  .nav-dropdown-toggle {
+    font-size: .82rem;
+  }
+
+  .header-cta {
+    padding-inline: 18px;
+  }
+}
+
+/* Contraste de las tres etapas en Cómo trabajo */
+
+.method-page.method-summary .method-process .method-process-list li,
+.method-page.method-summary .method-process .method-process-list li:nth-child(2) {
+  color: var(--green-ink) !important;
+  border-color: rgba(23,61,38,.18);
+  border-left: 5px solid var(--green-text);
+  background: #f7f1e6;
+  box-shadow: 0 20px 48px rgba(23,61,38,.11);
+  transition: transform .22s ease,box-shadow .22s ease;
+}
+
+.method-page.method-summary .method-process .method-process-list li:nth-child(2) {
+  background: #f1eadc;
+}
+
+.method-page.method-summary .method-process .method-process-list li:nth-child(3) {
+  background: #fbf7ef;
+}
+
+.method-page.method-summary .method-process .method-process-list li :is(h3,p,small) {
+  color: var(--green-ink) !important;
+}
+
+.method-page.method-summary .method-process .method-process-list li > span {
+  color: var(--green-text) !important;
+}
+
+.method-page.method-summary .method-process .method-process-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 58px rgba(23,61,38,.17);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .method-summary .method-process-list li {
+    transition: none;
+  }
+}
+
+/* ========================================================================== */
+/* PORTADA · PALETA VERDE CON MAYOR PROFUNDIDAD · 30/10/2026                  */
+/* ========================================================================== */
+
+.home-enhanced {
+  --home-forest: #173d26;
+  --home-deep-green: #22543f;
+  --home-leaf: #2f6f41;
+  --home-logo-green: #a0e1a8;
+  --home-sage: #dcecdf;
+  --home-soft-sage: #eef6f0;
+  --home-warm-cream: #f4eee3;
+  background: var(--home-soft-sage);
+}
+
+.home-enhanced .site-header {
+  background: rgba(247,250,247,.94);
+  border-bottom-color: rgba(23,61,38,.12);
+  backdrop-filter: blur(16px);
+}
+
+.home-enhanced .hero {
+  background:
+    radial-gradient(circle at 8% 16%,rgba(160,225,168,.32),transparent 25%),
+    linear-gradient(118deg,#f7f2e9 0%,#eef6f0 58%,#dcecdf 100%);
+}
+
+.home-enhanced .hero-copy {
+  background: rgba(247,242,233,.76);
+}
+
+.home-enhanced .hero-method {
+  color: var(--home-forest);
+  background: rgba(160,225,168,.92);
+  border-color: rgba(23,61,38,.15);
+  box-shadow: 0 18px 45px rgba(23,61,38,.15);
+}
+
+.home-enhanced .trust-marquee {
+  background: linear-gradient(90deg,var(--home-forest),var(--home-deep-green),var(--home-forest));
+}
+
+.home-enhanced #terapias {
+  background: var(--home-soft-sage);
+  box-shadow: 0 0 0 100vmax var(--home-soft-sage);
+  clip-path: inset(0 -100vmax);
+}
+
+.home-enhanced #terapias .section-heading {
+  position: relative;
+}
+
+.home-enhanced #terapias .section-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  width: min(34vw,380px);
+  height: 1px;
+  background: linear-gradient(90deg,transparent,var(--home-logo-green));
+}
+
+.home-enhanced .service-card {
+  border-color: rgba(23,61,38,.16);
+  box-shadow: 0 18px 50px rgba(23,61,38,.08);
+}
+
+.home-enhanced .service-card.featured {
+  color: #fff !important;
+  background:
+    radial-gradient(circle at 88% 16%,rgba(160,225,168,.2),transparent 28%),
+    var(--home-deep-green);
+  border-color: var(--home-deep-green);
+}
+
+.home-enhanced .service-card.featured :is(h3,p,a,span) {
+  color: inherit !important;
+}
+
+.home-enhanced .service-card.featured .service-match {
+  color: var(--home-logo-green) !important;
+}
+
+.home-enhanced .service-card.featured .service-match span {
+  color: rgba(255,255,255,.66) !important;
+}
+
+.home-enhanced .service-card-couple {
+  background: #dfeee4;
+}
+
+.home-enhanced .service-card-family {
+  background: var(--home-warm-cream);
+}
+
+.home-enhanced .service-card-police {
+  background: #cfe4d5;
+}
+
+.home-enhanced .practical {
+  color: #fff !important;
+  border-top: 0;
+  background:
+    radial-gradient(circle at 90% 12%,rgba(160,225,168,.19),transparent 25%),
+    linear-gradient(135deg,var(--home-forest),#245944 62%,#1b4938);
+}
+
+.home-enhanced .practical > .shell > .section-heading :is(h2,p),
+.home-enhanced .practical .draft-note,
+.home-enhanced .practical .draft-note :is(strong,span) {
+  color: #fff !important;
+}
+
+.home-enhanced .practical .draft-note {
+  border-color: rgba(255,255,255,.22);
+  background: rgba(255,255,255,.09);
+}
+
+.home-enhanced .price-card,
+.home-enhanced .price-card-featured {
+  background: #fbfcfa;
+  box-shadow: 0 22px 54px rgba(5,27,18,.22);
+}
+
+.home-enhanced .price-card-featured {
+  border-color: var(--home-logo-green);
+  background: linear-gradient(155deg,#f9f3e8,#e5f3e8);
+}
+
+.home-enhanced .location {
+  background:
+    radial-gradient(circle at 8% 86%,rgba(160,225,168,.35),transparent 24%),
+    #dcebe0;
+}
+
+.home-enhanced .location-address,
+.home-enhanced .map-card {
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 24px 60px rgba(23,61,38,.13);
+}
+
+.home-enhanced .instagram.soft {
+  background:
+    linear-gradient(115deg,rgba(244,238,227,.97),rgba(230,241,233,.97)),
+    var(--home-warm-cream);
+  border-block: 1px solid rgba(23,61,38,.1);
+}
+
+.home-enhanced .instagram-grid a {
+  border: 5px solid rgba(255,255,255,.72);
+  box-shadow: 0 16px 36px rgba(23,61,38,.14);
+}
+
+.home-enhanced .booking {
+  background: #e6f1e8;
+  box-shadow: 0 0 0 100vmax #e6f1e8;
+  clip-path: inset(0 -100vmax);
+}
+
+.home-enhanced .calendar-card {
+  border-color: rgba(23,61,38,.16);
+  box-shadow: 0 24px 60px rgba(23,61,38,.14);
+}
+
+.home-enhanced .site-footer {
+  color: #fff !important;
+  background:
+    radial-gradient(circle at 12% 0,rgba(160,225,168,.17),transparent 28%),
+    var(--home-forest);
+  border-top: 8px solid var(--home-logo-green);
+}
+
+.home-enhanced .site-footer :is(h3,p,a,span,strong) {
+  color: inherit !important;
+}
+
+.home-enhanced .site-footer .footer-bottom {
+  color: rgba(255,255,255,.68) !important;
+  border-top-color: rgba(255,255,255,.18);
+}
+
+@media (max-width: 780px) {
+  .home-enhanced .hero-copy {
+    background: transparent;
+  }
+
+  .home-enhanced #terapias .section-heading::after {
+    display: none;
+  }
+
+  .home-enhanced .instagram-grid a {
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 820px) {
+  .contact-hero {
+    padding: 58px 0 50px;
+  }
+
+  .contact-hero-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .contact-hero h1 {
+    font-size: clamp(3rem,15vw,4.6rem);
+  }
+
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-hero .shell,
+  .contact-section .shell {
+    width: min(100% - 30px,1180px);
+  }
+
+  .contact-form-card {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .contact-form-actions {
+    display: grid;
+  }
+
+  .contact-form-actions .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .reviews-page-hero-grid,
+  .reviews-page-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-score-card {
+    min-height: 0;
+  }
+
+  .reviews-verification-note {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .reviews-page-hero {
+    padding: 54px 0 66px;
+  }
+
+  .reviews-page-intro h1 {
+    font-size: clamp(2.9rem,14vw,4.2rem);
+  }
+
+  .reviews-score-card,
+  .reviews-verification-note {
+    padding: 24px 20px;
+    border-radius: 22px;
+  }
+
+  .reviews-page-values li {
+    grid-template-columns: 34px 1fr;
+    padding: 20px 18px;
+  }
+}
+
+/* ========================================================================== */
+/* MEJORA VISUAL DE PORTADA · 29/10/2026                                      */
+/* ========================================================================== */
+
+.home-enhanced .trust-marquee {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 18px 0;
+  color: #ffffff;
+  background: var(--green-ink);
+  border-block: 1px solid rgba(255,255,255,.12);
+}
+
+.home-enhanced .trust-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: trustMarquee 28s linear infinite;
+}
+
+.home-enhanced .trust-marquee:hover .trust-marquee-track {
+  animation-play-state: paused;
+}
+
+.home-enhanced .trust-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 24px;
+  padding-right: 24px;
+  font: 700 .78rem/1.2 var(--sans);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.home-enhanced .trust-marquee-group i {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 4px rgba(175,221,199,.12);
+}
+
+@keyframes trustMarquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.home-enhanced .service-card {
+  min-height: 380px;
+  isolation: isolate;
+  box-shadow: 0 14px 38px rgba(23,57,47,.06);
+}
+
+.home-enhanced .service-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-enhanced .service-card-couple {
+  background: #edf6f1;
+  border-color: #c8dfd4;
+}
+
+.home-enhanced .service-card-family {
+  background: #f7f3e9;
+  border-color: #e5dcc5;
+}
+
+.home-enhanced .service-card-police {
+  background: #e8f0ed;
+  border-color: #bfd4cb;
+}
+
+.home-enhanced .service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--green);
+  opacity: .78;
+}
+
+.home-enhanced .service-card.featured::before {
+  background: var(--mint);
+}
+
+.home-enhanced .service-icon {
+  width: 70px;
+  height: 70px;
+  font-size: 1.55rem;
+  transition: transform .25s ease,background-color .25s ease;
+}
+
+.home-enhanced .service-card:hover .service-icon {
+  transform: translateY(-3px) rotate(-3deg) scale(1.05);
+}
+
+.home-enhanced .service-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.home-enhanced .service-card a::after {
+  content: "→";
+  font-size: 1.25em;
+  transition: transform .2s ease;
+}
+
+.home-enhanced .service-card:hover a::after {
+  transform: translateX(5px);
+}
+
+@media (max-width: 780px) {
+  .home-enhanced .trust-marquee {
+    padding: 15px 0;
+  }
+
+  .home-enhanced .trust-marquee-group {
+    gap: 18px;
+    padding-right: 18px;
+    font-size: .7rem;
+  }
+
+  .home-enhanced .service-card {
+    min-height: 0;
+  }
+
+  .home-enhanced .service-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-enhanced .trust-marquee-track {
+    animation: none;
+  }
+
+  .home-enhanced .trust-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .home-enhanced .service-card,
+  .home-enhanced .service-icon,
+  .home-enhanced .service-card a::after {
+    transition: none;
+  }
+}
+
+/* ========================================================================== */
+/* ENTREVISTA POLICIAL RESUMIDA · 30/10/2026                                  */
+/* ========================================================================== */
+
+.police-page.police-summary .police-plan-card {
+  color: var(--green-ink) !important;
+  border: 1px solid rgba(23,61,38,.18);
+  border-left: 5px solid var(--green-text);
+  background: #f7f1e6;
+  box-shadow: 0 22px 55px rgba(23,61,38,.14);
+  backdrop-filter: none;
+}
+
+.police-page.police-summary .police-plan-card::before {
+  border-color: rgba(47,111,65,.18);
+}
+
+.police-page.police-summary .police-plan-top {
+  border-bottom-color: rgba(23,61,38,.14);
+}
+
+.police-page.police-summary .police-plan-top strong,
+.police-page.police-summary .police-plan-card li > span,
+.police-page.police-summary .police-plan-card li strong,
+.police-page.police-summary .police-plan-card li small {
+  color: var(--green-ink) !important;
+}
+
+.police-page.police-summary .police-plan-card li > span {
+  border-color: rgba(47,111,65,.35);
+  background: rgba(255,255,255,.42);
+}
+
+.police-page.police-summary .police-plan-card li:not(:last-child)::after {
+  background: rgba(47,111,65,.22);
+}
+
+.police-page.police-summary .police-plan-card li i {
+  background: rgba(47,111,65,.16);
+}
+
+.police-page.police-summary .police-plan-card li i::after {
+  background: var(--green-text);
+}
+
+.police-page.police-summary .police-plan-status {
+  color: var(--green-ink);
+  border: 1px solid rgba(47,111,65,.18);
+  background: #e4efe7;
+}
+
+.police-page.police-summary .police-training-grid article:nth-child(3) {
+  background: #eef5f0;
+}
+
+.police-page.police-summary .police-pricing .police-price-card.featured {
+  color: var(--green-ink) !important;
+  border: 1px solid rgba(23,61,38,.18);
+  border-left: 5px solid var(--green-text);
+  background: #f7f1e6;
+  box-shadow: 0 22px 55px rgba(23,61,38,.14);
+}
+
+.police-page.police-summary .police-price-card.featured .police-price-tag {
+  color: #fff !important;
+  background: var(--green-text);
+}
+
+.police-page.police-summary .police-price-card.featured .button {
+  color: #fff !important;
+  background: var(--green-text);
+}
+
+.police-page.police-summary .police-price-card.featured .button:hover {
+  color: #fff !important;
+  background: var(--green-ink);
+}
+
+@media (max-width: 780px) {
+  .police-page.police-summary .police-plan-card,
+  .police-page.police-summary .police-price-card.featured {
+    border-left-width: 4px;
+  }
+}
+
+/* ========================================================================== */
+/* PALETA EQUILIBRADA · ENTREVISTA POLICIAL                                   */
+/* Verde profundo + crema + verde del logotipo como acento                    */
+/* ========================================================================== */
+
+.police-page.police-summary {
+  background: #fbfaf6;
+}
+
+.police-page.police-summary .police-hero {
+  color: #fffaf1 !important;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.15),transparent 26%),
+    linear-gradient(135deg,#173d26 0%,#214f36 58%,#2f6f41 100%);
+}
+
+.police-page.police-summary .police-hero-copy h1 {
+  color: #fffaf1 !important;
+}
+
+.police-page.police-summary .police-hero-copy h1 em {
+  color: #bfe5c6 !important;
+}
+
+.police-page.police-summary .police-breadcrumb,
+.police-page.police-summary .police-breadcrumb a,
+.police-page.police-summary .police-lead,
+.police-page.police-summary .police-hero-note {
+  color: rgba(255,250,241,.76) !important;
+}
+
+.police-page.police-summary .police-hero .eyebrow,
+.police-page.police-summary .police-hero .eyebrow span {
+  color: #d8efdd !important;
+}
+
+.police-page.police-summary .police-hero .button-light {
+  color: var(--green-ink) !important;
+  border-color: #fffaf1;
+  background: #fffaf1;
+}
+
+.police-page.police-summary .police-hero .button-outline-light {
+  color: #fffaf1 !important;
+  border-color: rgba(255,250,241,.65);
+  background: transparent;
+}
+
+.police-page.police-summary .police-hero .button-outline-light:hover {
+  color: var(--green-ink) !important;
+  background: #fffaf1;
+}
+
+.police-page.police-summary .police-badges {
+  background: #fffdf8;
+}
+
+.police-page.police-summary .police-badges span {
+  color: var(--green-ink);
+  border-color: rgba(23,61,38,.12);
+}
+
+.police-page.police-summary .police-phases {
+  color: var(--green-ink) !important;
+  background: #f3eee4;
+}
+
+.police-page.police-summary .police-phases .section-heading > p {
+  color: #586a61 !important;
+}
+
+.police-page.police-summary .police-phases .eyebrow,
+.police-page.police-summary .police-phases .eyebrow span,
+.police-page.police-summary .police-phase-number,
+.police-page.police-summary .police-phase-list small {
+  color: var(--green-text) !important;
+}
+
+.police-page.police-summary .police-phase-list {
+  display: grid;
+  gap: 15px;
+  border-top: 0;
+}
+
+.police-page.police-summary .police-phase-list > li {
+  padding: 34px;
+  border: 1px solid rgba(23,61,38,.12);
+  border-radius: 24px;
+  background: rgba(255,255,255,.7);
+  box-shadow: 0 12px 34px rgba(23,61,38,.05);
+}
+
+.police-page.police-summary .police-phase-list p,
+.police-page.police-summary .police-phase-list ul li {
+  color: #53645c !important;
+}
+
+.police-page.police-summary .police-phase-list ul li {
+  border-bottom-color: rgba(23,61,38,.11);
+}
+
+.police-page.police-summary .police-phase-list ul li::before {
+  color: var(--green-text);
+}
+
+.police-page.police-summary .police-training-grid article {
+  border-color: rgba(23,61,38,.13);
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(23,61,38,.05);
+}
+
+.police-page.police-summary .police-training-grid article:nth-child(2) {
+  background: #f7f1e6;
+}
+
+.police-page.police-summary .police-training-grid article:nth-child(3) {
+  background: #e8f2eb;
+}
+
+.police-page.police-summary .police-training-grid article > span,
+.police-page.police-summary .police-simulation-steps b {
+  color: var(--green-text);
+}
+
+.police-page.police-summary .police-simulation-card {
+  border: 1px solid rgba(23,61,38,.12);
+  background: #fffdf8;
+  box-shadow: 0 22px 58px rgba(23,61,38,.09);
+}
+
+.police-page.police-summary .police-camera {
+  background:
+    linear-gradient(rgba(191,229,198,.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(191,229,198,.07) 1px,transparent 1px),
+    #173d26;
+  background-size: 34px 34px;
+}
+
+.police-page.police-summary .police-camera > div span {
+  border-color: #bfe5c6;
+}
+
+.police-page.police-summary .police-pricing {
+  color: #fffaf1 !important;
+  background:
+    radial-gradient(circle at 12% 15%,rgba(160,225,168,.12),transparent 25%),
+    #214f36;
+}
+
+.police-page.police-summary .police-pricing .section-heading h2,
+.police-page.police-summary .police-pricing .section-heading > p,
+.police-page.police-summary .police-pricing .eyebrow,
+.police-page.police-summary .police-pricing .eyebrow span,
+.police-page.police-summary .police-price-note {
+  color: #fffaf1 !important;
+}
+
+.police-page.police-summary .police-price-card,
+.police-page.police-summary .police-pricing .police-price-card.featured {
+  color: var(--green-ink) !important;
+  border-color: rgba(255,250,241,.22);
+}
+
+.police-page.police-summary .police-price-card {
+  background: #fffdf8;
+}
+
+.police-page.police-summary .police-pricing .police-price-card.featured {
+  background: #f7f1e6;
+}
+
+.police-page.police-summary .police-price-card:not(.featured) .police-price-tag {
+  color: var(--green-ink) !important;
+  background: #bfe5c6;
+}
+
+.police-page.police-summary .police-price-card .button-ghost {
+  color: var(--green-ink) !important;
+  border-color: rgba(23,61,38,.38);
+  background: transparent;
+}
+
+.police-page.police-summary .police-price-card .button-ghost:hover {
+  color: #fff !important;
+  background: var(--green-text);
+}
+
+.police-page.police-summary .police-final {
+  color: var(--green-ink) !important;
+  background: #eee7da;
+  border-top: 10px solid #fffdf8;
+}
+
+.police-page.police-summary .police-final h2,
+.police-page.police-summary .police-final p,
+.police-page.police-summary .police-final .eyebrow,
+.police-page.police-summary .police-final .eyebrow span {
+  color: var(--green-ink) !important;
+}
+
+.police-page.police-summary .police-final .button-light {
+  color: #fff !important;
+  border-color: var(--green-text);
+  background: var(--green-text);
+}
+
+.police-page.police-summary .police-final .button-outline-light {
+  color: var(--green-ink) !important;
+  border-color: rgba(23,61,38,.45);
+  background: transparent;
+}
+
+.police-page.police-summary .police-final .button-outline-light:hover {
+  color: #fff !important;
+  background: var(--green-ink);
+}
+
+@media (max-width: 780px) {
+  .police-page.police-summary .police-phase-list > li {
+    padding: 26px 22px;
+  }
+
+  .police-page.police-summary .police-phases,
+  .police-page.police-summary .police-pricing {
+    background-image: none;
+  }
+}
+
+/* Tarifas de la portada · verde exacto del logotipo */
+
+.home-enhanced .practical {
+  color: var(--green-ink) !important;
+  background: var(--mint);
+}
+
+.home-enhanced .practical > .shell > .section-heading :is(h2,p),
+.home-enhanced .practical > .shell > .section-heading .eyebrow,
+.home-enhanced .practical > .shell > .section-heading .eyebrow span,
+.home-enhanced .practical .draft-note,
+.home-enhanced .practical .draft-note :is(strong,span) {
+  color: var(--green-ink) !important;
+}
+
+.home-enhanced .practical .draft-note {
+  border-color: rgba(23,61,38,.18);
+  background: rgba(255,255,255,.42);
+}
+
+.home-enhanced .practical .price-card,
+.home-enhanced .practical .price-card-featured {
+  border-color: rgba(23,61,38,.15);
+  background: #fffdf9;
+  box-shadow: 0 18px 46px rgba(23,61,38,.1);
+}
+
+/* Footer global · verde exacto del logotipo */
+
+.site-footer {
+  color: var(--green-ink) !important;
+  background: var(--mint) !important;
+  border-top: 1px solid rgba(23,61,38,.16);
+}
+
+.site-footer :is(h3,p,a,span,strong) {
+  color: inherit !important;
+}
+
+.site-footer .footer-bottom {
+  color: rgba(23,61,38,.72) !important;
+  border-top-color: rgba(23,61,38,.18);
+}
+
+body.home-enhanced .site-footer {
+  color: var(--green-ink) !important;
+  background: var(--mint) !important;
+  border-top-color: rgba(23,61,38,.16);
+}
+
+body.home-enhanced .site-footer :is(h3,p,a,span,strong) {
+  color: inherit !important;
+}
+
+body.home-enhanced .site-footer .footer-bottom {
+  color: rgba(23,61,38,.72) !important;
+  border-top-color: rgba(23,61,38,.18);
+}
+
+/* Tarjeta de terapia individual · verde claro de marca */
+
+.home-enhanced .service-card.featured {
+  color: var(--green-ink) !important;
+  border-color: rgba(23,61,38,.18);
+  background:
+    radial-gradient(circle at 88% 16%,rgba(255,255,255,.42),transparent 28%),
+    var(--mint);
+}
+
+.home-enhanced .service-card.featured :is(h3,p,a,span) {
+  color: inherit !important;
+}
+
+.home-enhanced .service-card.featured .service-match {
+  color: var(--green-text) !important;
+}
+
+.home-enhanced .service-card.featured .service-match span {
+  color: rgba(23,61,38,.7) !important;
+}
+
+.home-enhanced .service-card.featured .service-icon {
+  color: var(--green-ink);
+  border-color: rgba(23,61,38,.22);
+  background: rgba(255,255,255,.34);
+}
+
+.home-enhanced .service-card.featured::after {
+  border-color: rgba(23,61,38,.14);
+}
+
+.home-enhanced .service-card.featured::before {
+  background: var(--green-text);
+}
+
+/* ========================================================================== */
+/* BARRIDO GLOBAL DE MARCA · VERDE DEL LOGOTIPO COMO COLOR PRINCIPAL          */
+/* ========================================================================== */
+
+:root {
+  --brand-logo: #a0e1a8;
+  --brand-logo-soft: #e8f7eb;
+  --brand-logo-pale: #f4faf5;
+  --brand-contrast: #173d26;
+}
+
+body {
+  background: var(--brand-logo-pale);
+}
+
+.site-header {
+  border-bottom-color: rgba(23,61,38,.12);
+  background: rgba(250,253,250,.96);
+}
+
+:is(
+  .profile-facts,
+  .cv-section,
+  .profile-closing,
+  .therapy-process,
+  .therapy-final,
+  .couple-no-blame,
+  .family-perspective,
+  .family-process,
+  .family-final,
+  .method-values,
+  .method-process,
+  .method-expectations,
+  .method-final,
+  .reviews,
+  .calendar-top,
+  .final-cta
+) {
+  color: var(--brand-contrast) !important;
+  background-color: var(--brand-logo) !important;
+}
+
+:is(
+  .profile-facts,
+  .cv-section,
+  .profile-closing,
+  .therapy-process,
+  .therapy-final,
+  .couple-no-blame,
+  .family-perspective,
+  .family-process,
+  .family-final,
+  .method-values,
+  .method-process,
+  .method-expectations,
+  .method-final,
+  .reviews,
+  .calendar-top,
+  .final-cta
+) :is(h1,h2,h3,h4,p,a,span,small,strong,li,label,summary) {
+  color: inherit !important;
+}
+
+:is(.therapy-hero,.couple-hero,.family-hero,.method-hero,.profile-hero,.contact-hero,.reviews-hero,.legal-hero) {
+  background-color: var(--brand-logo-soft);
+}
+
+:is(.therapy-start-card,.couple-dialogue-top,.family-node-center,.method-map-card) {
+  color: var(--brand-contrast) !important;
+  background: var(--brand-logo) !important;
+}
+
+:is(.therapy-start-card,.couple-dialogue-top,.family-node-center,.method-map-card) :is(h2,h3,p,span,strong,small) {
+  color: inherit !important;
+}
+
+.button,
+.header-cta,
+.mobile-actions .mobile-actions-book {
+  color: var(--brand-contrast);
+  border-color: rgba(23,61,38,.18);
+  background: var(--brand-logo);
+}
+
+.button:hover,
+.header-cta:hover {
+  color: #fff;
+  border-color: var(--brand-contrast);
+  background: var(--brand-contrast);
+}
+
+/* Sobre mí · retrato, confianza, trayectoria y motivos para elegir */
+
+.profile-refined .profile-hero {
+  position: relative;
+  background:
+    radial-gradient(circle at 8% 18%,rgba(160,225,168,.48),transparent 30%),
+    linear-gradient(120deg,#f8fbf7 0%,#e8f7eb 58%,#d8f0dd 100%);
+}
+
+.profile-refined .profile-hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  bottom: -160px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(23,61,38,.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.profile-refined .profile-hero-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-trust-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 28px;
+}
+
+.profile-trust-tags span {
+  padding: 9px 13px;
+  border: 1px solid rgba(23,61,38,.15);
+  border-radius: 999px;
+  color: var(--brand-contrast);
+  background: rgba(255,255,255,.7);
+  font-size: .74rem;
+  font-weight: 700;
+  box-shadow: 0 10px 28px rgba(23,61,38,.06);
+}
+
+.profile-refined .profile-portrait {
+  border: 8px solid rgba(255,255,255,.72);
+  box-shadow: 0 30px 75px rgba(23,61,38,.18);
+}
+
+.profile-refined .profile-portrait::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 18px;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 200px 200px 20px 20px;
+  pointer-events: none;
+}
+
+.profile-refined .profile-portrait-card {
+  right: 26px;
+  bottom: 26px;
+  max-width: 285px;
+  color: var(--brand-contrast);
+  border-color: rgba(255,255,255,.68);
+  background: rgba(160,225,168,.94);
+}
+
+.profile-refined .profile-portrait-card small {
+  color: var(--green-text);
+}
+
+.profile-refined .profile-portrait-card span {
+  margin-top: 7px;
+  color: rgba(23,61,38,.72);
+  font-size: .72rem;
+  line-height: 1.45;
+}
+
+.profile-refined .profile-facts {
+  border-block: 1px solid rgba(23,61,38,.13);
+  background: var(--brand-logo) !important;
+}
+
+.profile-refined .profile-facts-grid > div {
+  border-right-color: rgba(23,61,38,.14);
+}
+
+.profile-refined .profile-facts span {
+  color: rgba(23,61,38,.7) !important;
+}
+
+.profile-refined .profile-principles {
+  padding-block: 100px;
+}
+
+.profile-refined .principles-grid {
+  gap: 22px;
+}
+
+.profile-refined .principles-grid article {
+  position: relative;
+  min-height: 310px;
+  overflow: hidden;
+  border-color: rgba(23,61,38,.12);
+  background: #fffdf9;
+  box-shadow: 0 22px 58px rgba(23,61,38,.08);
+}
+
+.profile-refined .principles-grid article:nth-child(2) {
+  background: var(--brand-logo-soft);
+}
+
+.profile-refined .principles-grid article:nth-child(3) {
+  background: #f5efe4;
+}
+
+.profile-refined .principles-grid article::after {
+  content: "";
+  position: absolute;
+  right: -42px;
+  bottom: -42px;
+  width: 130px;
+  height: 130px;
+  border: 1px solid rgba(23,61,38,.1);
+  border-radius: 50%;
+}
+
+.profile-refined .principles-grid span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--brand-contrast);
+  background: var(--brand-logo);
+}
+
+.profile-refined .principles-grid h3 {
+  margin-top: 58px;
+}
+
+.profile-refined .profile-story {
+  padding-top: 30px;
+}
+
+.profile-refined .profile-story-copy blockquote {
+  border-left-color: var(--green-text);
+  background: var(--brand-logo-soft);
+}
+
+.profile-refined .cv-section {
+  color: var(--brand-contrast) !important;
+  background:
+    radial-gradient(circle at 92% 10%,rgba(255,255,255,.45),transparent 24%),
+    var(--brand-logo) !important;
+}
+
+.profile-refined .cv-section .section-heading > p,
+.profile-refined .cv-timeline p {
+  color: rgba(23,61,38,.72) !important;
+}
+
+.profile-refined .cv-timeline li::before {
+  background: rgba(23,61,38,.18);
+}
+
+.profile-refined .cv-timeline small {
+  color: var(--green-text) !important;
+}
+
+.profile-refined .cv-year {
+  border-color: rgba(23,61,38,.18);
+  background: rgba(255,255,255,.62);
+}
+
+.profile-refined .cv-sidebar {
+  border-color: rgba(23,61,38,.14);
+  background: rgba(255,255,255,.6);
+  box-shadow: 0 24px 60px rgba(23,61,38,.1);
+}
+
+.profile-refined .cv-license {
+  background: var(--brand-contrast);
+  color: #fff;
+}
+
+.profile-refined .cv-specialties li {
+  color: rgba(23,61,38,.78);
+  border-bottom-color: rgba(23,61,38,.12);
+}
+
+.profile-refined .cv-validation {
+  color: rgba(23,61,38,.62);
+  border-top-color: rgba(23,61,38,.12);
+}
+
+.profile-refined .profile-closing {
+  border-top: 1px solid rgba(23,61,38,.14);
+  background: var(--brand-logo) !important;
+}
+
+.profile-refined .profile-closing p:not(.eyebrow) {
+  color: rgba(23,61,38,.72) !important;
+}
+
+@media (max-width: 780px) {
+  .profile-refined .profile-hero {
+    padding-top: 34px;
+  }
+
+  .profile-trust-tags {
+    gap: 7px;
+  }
+
+  .profile-trust-tags span {
+    padding: 8px 10px;
+    font-size: .68rem;
+  }
+
+  .profile-refined .profile-portrait {
+    height: min(118vw,560px);
+    border-width: 5px;
+  }
+
+  .profile-refined .profile-portrait-card {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    max-width: none;
+  }
+
+  .profile-refined .profile-principles {
+    padding-block: 70px;
+  }
+
+  .profile-refined .principles-grid article {
+    min-height: 250px;
+  }
+
+  .profile-refined .profile-story {
+    padding-top: 10px;
+  }
+}
+
+/* Sobre mí · cierre cálido para separar trayectoria y footer */
+
+.profile-refined .profile-closing {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 1px solid rgba(23,61,38,.12);
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 26%),
+    #f5efe4 !important;
+}
+
+.profile-refined .profile-closing :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.profile-refined .profile-closing p:not(.eyebrow) {
+  color: rgba(23,61,38,.74) !important;
+}
+
+.profile-refined .profile-closing .button-light {
+  color: #fff !important;
+  border-color: var(--brand-contrast);
+  background: var(--brand-contrast);
+}
+
+.profile-refined .profile-closing .button-light:hover {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo);
+  background: var(--brand-logo);
+}
+
+.profile-refined .profile-closing .button-outline-light {
+  color: var(--brand-contrast) !important;
+  border-color: rgba(23,61,38,.42);
+  background: #fffdf9;
+}
+
+.profile-refined .profile-closing .button-outline-light:hover {
+  color: #fff !important;
+  border-color: var(--brand-contrast);
+  background: var(--brand-contrast);
+}
+
+/* Sobre mí · los dos botones comparten color y estados */
+
+.profile-refined .profile-closing-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.profile-refined .profile-closing-actions .button:hover,
+.profile-refined .profile-closing-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+/* Contacto · cierre diferenciado, sin franja y con botones legibles */
+
+.contact-page .final-cta {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.contact-page .final-cta :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.contact-page .final-cta .hero-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.contact-page .final-cta .hero-actions .button:hover,
+.contact-page .final-cta .hero-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.contact-page .final-cta + .site-footer {
+  border-top: 0;
+}
+
+/* Contacto · formulario más claro y guiado */
+
+.contact-form-steps {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin: 26px 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-form-steps li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  column-gap: 10px;
+  padding: 14px;
+  border: 1px solid rgba(23,61,38,.11);
+  border-radius: 16px;
+  background: rgba(160,225,168,.22);
+}
+
+.contact-form-steps li > span {
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--brand-contrast);
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.contact-form-steps strong {
+  color: var(--brand-contrast);
+  font-size: .8rem;
+}
+
+.contact-form-steps small {
+  color: var(--muted);
+  font-size: .66rem;
+}
+
+.contact-form-required-note {
+  margin: 0 0 14px !important;
+  color: var(--muted) !important;
+  text-align: right;
+  font-size: .7rem;
+}
+
+.contact-form-required-note span,
+.required-marker {
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+.contact-page .contact-field :is(input,select,textarea) {
+  border-color: rgba(23,61,38,.16);
+  background: #fffefa;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+}
+
+.contact-page .contact-field :is(input,select,textarea):hover {
+  border-color: rgba(23,61,38,.34);
+}
+
+.contact-page .contact-field :is(input,select,textarea):focus {
+  border-color: var(--green-text);
+  box-shadow: 0 0 0 4px rgba(160,225,168,.3);
+}
+
+.contact-message-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: -4px;
+  color: var(--muted);
+  font-size: .72rem;
+}
+
+.contact-submit {
+  display: inline-flex;
+  justify-content: center;
+  gap: 18px;
+  min-width: 210px;
+}
+
+.contact-submit span:last-child {
+  font-size: 1.1rem;
+  transition: transform .2s ease;
+}
+
+.contact-submit:hover span:last-child,
+.contact-submit:focus-visible span:last-child {
+  transform: translateX(4px);
+}
+
+@media (max-width: 780px) {
+  .contact-form-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-steps li {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+}
+
+/* Terapia individual · pasos de Cómo trabajaremos más visibles */
+
+.therapy-page .therapy-process-list {
+  gap: 18px;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+}
+
+.therapy-page .therapy-process-list li {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(23,61,38,.16);
+  border-radius: 24px;
+  color: var(--brand-contrast);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 18px 42px rgba(23,61,38,.09);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.therapy-page .therapy-process-list li:nth-child(even) {
+  background: rgba(245,239,228,.84);
+}
+
+.therapy-page .therapy-process-list li::after {
+  content: "";
+  position: absolute;
+  right: -48px;
+  bottom: -48px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgba(23,61,38,.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.therapy-page .therapy-process-list li:hover {
+  border-color: rgba(23,61,38,.3);
+  box-shadow: 0 24px 52px rgba(23,61,38,.14);
+  transform: translateY(-4px);
+}
+
+.therapy-page .therapy-process-list li > span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 4px solid rgba(160,225,168,.65);
+  border-radius: 50%;
+  color: #fff !important;
+  background: var(--brand-contrast);
+  box-shadow: 0 8px 20px rgba(23,61,38,.2);
+  font-size: .8rem;
+}
+
+.therapy-page .therapy-process-list small {
+  color: var(--green-text) !important;
+}
+
+.therapy-page .therapy-process-list h3 {
+  color: var(--brand-contrast) !important;
+}
+
+.therapy-page .therapy-process-list p {
+  color: rgba(23,61,38,.72) !important;
+}
+
+@media (max-width: 780px) {
+  .therapy-page .therapy-process-list {
+    gap: 14px;
+  }
+
+  .therapy-page .therapy-process-list li {
+    grid-template-columns: 48px 1fr;
+    gap: 15px;
+    padding: 26px 22px;
+  }
+
+  .therapy-page .therapy-process-list li > span {
+    width: 42px;
+    height: 42px;
+    border-width: 3px;
+  }
+
+  .therapy-page .therapy-process-list h3 {
+    margin-top: 24px;
+  }
+}
+
+/* Terapia individual · cierre separado del footer y botones unificados */
+
+.therapy-page .therapy-final {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.therapy-page .therapy-final :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.therapy-page .therapy-final p:not(.eyebrow) {
+  color: rgba(23,61,38,.74) !important;
+}
+
+.therapy-page .therapy-final-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.therapy-page .therapy-final-actions .button:hover,
+.therapy-page .therapy-final-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.therapy-page .therapy-final + .site-footer {
+  border-top: 0;
+}
+
+/* Terapia de pareja · cierre separado del footer y botones unificados */
+
+.couple-page .couple-final {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.couple-page .couple-final :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.couple-page .couple-final p:not(.eyebrow) {
+  color: rgba(23,61,38,.74) !important;
+}
+
+.couple-page .couple-final .therapy-final-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.couple-page .couple-final .therapy-final-actions .button:hover,
+.couple-page .couple-final .therapy-final-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.couple-page .couple-final + .site-footer {
+  border-top: 0;
+}
+
+/* Terapia familiar · cierre separado del footer y botones unificados */
+
+.family-page .family-final {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.family-page .family-final :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.family-page .family-final p:not(.eyebrow) {
+  color: rgba(23,61,38,.74) !important;
+}
+
+.family-page .family-final .therapy-final-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.family-page .family-final .therapy-final-actions .button:hover,
+.family-page .family-final .therapy-final-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.family-page .family-final + .site-footer {
+  border-top: 0;
+}
+
+/* Terapia familiar · tarjetas de proceso con contraste suave */
+
+.family-page .family-process-grid li {
+  color: var(--brand-contrast) !important;
+  border-color: rgba(23,61,38,.18);
+  background: #fff8ef;
+  box-shadow: 0 16px 34px rgba(23,61,38,.08);
+}
+
+.family-page .family-process-grid li:nth-child(even) {
+  background: #edf7ee;
+}
+
+.family-page .family-process-grid li :is(span,small,h3,p) {
+  color: inherit !important;
+}
+
+/* Cómo trabajo · cierre separado del footer y botones unificados */
+
+.method-page .method-final {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.method-page .method-final :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.method-page .method-final p:not(.eyebrow) {
+  color: rgba(23,61,38,.74) !important;
+}
+
+.method-page .method-final .therapy-final-actions .button {
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.method-page .method-final .therapy-final-actions .button:hover,
+.method-page .method-final .therapy-final-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.method-page .method-final + .site-footer {
+  border-top: 0;
+}
+
+/* Opiniones · cierre separado del footer y botones unificados */
+
+.reviews-page .final-cta {
+  color: var(--brand-contrast) !important;
+  border-top: 8px solid var(--brand-logo);
+  border-bottom: 0;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.22),transparent 27%),
+    #f5efe4 !important;
+}
+
+.reviews-page .final-cta :is(h2,p,.eyebrow,.eyebrow span) {
+  color: var(--brand-contrast) !important;
+}
+
+.reviews-page .final-cta .hero-actions .button {
+  min-width: 220px;
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.reviews-page .final-cta .hero-actions .button:hover,
+.reviews-page .final-cta .hero-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.reviews-page .final-cta + .site-footer {
+  border-top: 0;
+}
+
+/* Terapias · versión resumida en tres bloques */
+
+.therapy-summary-info {
+  padding: 96px 0;
+  background: #fffdf9;
+}
+
+.therapy-summary-heading {
+  display: grid;
+  grid-template-columns: minmax(0,1.15fr) minmax(280px,.7fr);
+  gap: 28px 70px;
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.therapy-summary-heading .eyebrow {
+  grid-column: 1/-1;
+  margin-bottom: -10px;
+}
+
+.therapy-summary-heading h2 {
+  max-width: 760px;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2.35rem,4.5vw,4.6rem);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.therapy-summary-heading > p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+}
+
+.therapy-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+}
+
+.therapy-summary-card {
+  padding: 38px;
+  border: 1px solid rgba(23,61,38,.16);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(23,61,38,.06);
+}
+
+.therapy-summary-card-soft {
+  background: #edf7ee;
+}
+
+.therapy-summary-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--brand-contrast);
+  background: var(--brand-logo);
+  font-size: .74rem;
+  font-weight: 700;
+}
+
+.therapy-summary-card h3 {
+  margin: 42px 0 22px;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem,2.5vw,2.35rem);
+  font-weight: 500;
+}
+
+.therapy-summary-card ul,
+.therapy-summary-steps {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.therapy-summary-card ul li {
+  position: relative;
+  padding: 15px 0 15px 28px;
+  border-top: 1px solid rgba(23,61,38,.12);
+  color: var(--muted);
+}
+
+.therapy-summary-card ul li::before {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  content: "✓";
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+.therapy-summary-steps li {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 18px;
+  padding: 17px 0;
+  border-top: 1px solid rgba(23,61,38,.14);
+}
+
+.therapy-summary-steps strong {
+  color: var(--brand-contrast);
+}
+
+.therapy-summary-steps span {
+  color: var(--muted);
+}
+
+.therapy-summary-first {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 26px 32px;
+  border: 1px solid rgba(23,61,38,.14);
+  border-radius: var(--radius);
+  background: #f5efe4;
+}
+
+.therapy-summary-first strong {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.therapy-summary-first p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.therapy-summary-pricing {
+  padding: 88px 0;
+  border-top: 8px solid var(--brand-logo);
+  background:
+    radial-gradient(circle at 86% 16%,rgba(160,225,168,.2),transparent 28%),
+    #f5efe4;
+}
+
+.therapy-summary-pricing-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(340px,.7fr);
+  gap: 76px;
+  align-items: center;
+}
+
+.therapy-summary-price-copy h2 {
+  max-width: 760px;
+  margin: 20px 0;
+  font-family: var(--serif);
+  font-size: clamp(2.4rem,4.5vw,4.6rem);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.therapy-summary-price-copy > p:not(.eyebrow) {
+  max-width: 650px;
+  color: rgba(23,61,38,.74);
+}
+
+.therapy-summary-actions {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+  max-width: 620px;
+  margin-top: 30px;
+}
+
+.therapy-summary-actions .button {
+  width: 100%;
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.therapy-summary-actions .button:hover,
+.therapy-summary-actions .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.therapy-summary-price-card {
+  padding: 38px;
+  border: 1px solid rgba(23,61,38,.2);
+  border-radius: calc(var(--radius) + 4px);
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 22px 50px rgba(23,61,38,.1);
+}
+
+.therapy-summary-price-card > small {
+  display: block;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.therapy-summary-price-card > strong {
+  display: block;
+  margin: 12px 0 28px;
+  color: var(--brand-contrast);
+  font-family: var(--serif);
+  font-size: clamp(3.6rem,6vw,5.6rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.therapy-summary-price-card dl {
+  margin: 0;
+}
+
+.therapy-summary-price-card dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(23,61,38,.14);
+}
+
+.therapy-summary-price-card dt {
+  color: var(--muted);
+}
+
+.therapy-summary-price-card dd {
+  margin: 0;
+  color: var(--brand-contrast);
+  font-weight: 700;
+  text-align: right;
+}
+
+.therapy-summary-provisional {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: .74rem;
+}
+
+.therapy-summary-pricing + .site-footer {
+  border-top: 0;
+}
+
+@media (max-width: 900px) {
+  .therapy-summary-heading,
+  .therapy-summary-pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .therapy-summary-heading .eyebrow {
+    margin-bottom: 0;
+  }
+
+  .therapy-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .therapy-summary-info,
+  .therapy-summary-pricing {
+    padding: 68px 0;
+  }
+
+  .therapy-summary-card,
+  .therapy-summary-price-card {
+    padding: 28px 24px;
+  }
+
+  .therapy-summary-card h3 {
+    margin-top: 30px;
+  }
+
+  .therapy-summary-steps li,
+  .therapy-summary-first {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .therapy-summary-first {
+    padding: 24px;
+  }
+
+  .therapy-summary-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .therapy-summary-price-card dl > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .therapy-summary-price-card dd {
+    text-align: left;
+  }
+}
+
+/* Opiniones · invitación profesional a publicar en Google */
+
+.review-invite {
+  padding: 90px 0;
+  border-top: 8px solid var(--brand-logo);
+  background:
+    radial-gradient(circle at 86% 16%,rgba(160,225,168,.14),transparent 28%),
+    #f8fbf8;
+}
+
+.review-invite-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.1fr) minmax(340px,.65fr);
+  gap: 78px;
+  align-items: center;
+}
+
+.review-invite-copy h2 {
+  max-width: 760px;
+  margin: 22px 0;
+  font-family: var(--serif);
+  font-size: clamp(2.5rem,4.8vw,4.9rem);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.review-invite-copy > p:not(.eyebrow) {
+  max-width: 670px;
+  margin-bottom: 0;
+  color: rgba(23,61,38,.74);
+}
+
+.review-invite-card {
+  padding: 38px;
+  border: 1px solid rgba(23,61,38,.18);
+  border-radius: calc(var(--radius) + 4px);
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(23,61,38,.1);
+}
+
+/* Opiniones · fondos más blancos y luminosos */
+
+.reviews-page .reviews-page-hero {
+  background:
+    radial-gradient(circle at 88% 18%,rgba(160,225,168,.2),transparent 30%),
+    #fafcfb;
+}
+
+.reviews-page .reviews-verification-note {
+  background: #f7faf8;
+}
+
+.review-invite-google {
+  color: var(--brand-contrast);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.review-invite-stars {
+  margin: 18px 0 24px;
+  color: #e6a430;
+  letter-spacing: .12em;
+  font-size: 1.35rem;
+}
+
+.review-invite-card > strong {
+  display: block;
+  color: var(--brand-contrast);
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.review-invite-card > p {
+  margin: 8px 0 24px;
+  color: var(--muted);
+}
+
+.review-invite-card .button {
+  width: 100%;
+  color: #fff !important;
+  border-color: var(--brand-contrast) !important;
+  background: var(--brand-contrast) !important;
+}
+
+.review-invite-card .button:hover,
+.review-invite-card .button:focus-visible {
+  color: var(--brand-contrast) !important;
+  border-color: var(--brand-logo) !important;
+  background: var(--brand-logo) !important;
+}
+
+.review-invite-card > small {
+  display: block;
+  margin-top: 15px;
+  color: var(--muted);
+  font-size: .72rem;
+  text-align: center;
+}
+
+.review-invite + .site-footer {
+  border-top: 0;
+}
+
+@media (max-width: 900px) {
+  .review-invite-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+}
+
+@media (max-width: 620px) {
+  .review-invite {
+    padding: 68px 0;
+  }
+
+  .review-invite-card {
+    padding: 28px 24px;
+  }
 }
 
